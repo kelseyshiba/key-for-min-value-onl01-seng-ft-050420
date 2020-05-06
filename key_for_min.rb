@@ -3,12 +3,11 @@
 
 def key_for_min_value(name_hash)
   smallest = nil
-  person = ""
   name_hash.each do |name, value|
     if smallest == nil || value < smallest
       value = smallest
-      person = name
+      smallest = name
     end
   end
-  person
+  smallest
 end
