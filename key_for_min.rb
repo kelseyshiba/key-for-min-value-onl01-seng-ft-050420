@@ -8,8 +8,6 @@ def key_for_min_value(name_hash)
     if smallest == nil || value < smallest
       value = smallest
       smallest = name
-      binding.pry
     end
   end
-  
 end
